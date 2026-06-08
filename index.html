@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Arshaan Shaikh | CI/CD Pipeline</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #0f172a; color: #e2e8f0; text-align: center; padding: 60px 20px; }
+    h1 { color: #38bdf8; font-size: 2.5rem; margin-bottom: 10px; }
+    p { color: #94a3b8; font-size: 1.1rem; margin-bottom: 30px; }
+    .badges { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-bottom: 30px; }
+    .badge { background: #1e40af; padding: 10px 22px; border-radius: 25px; font-size: 0.95rem; }
+    .pipeline { background: #1e293b; border-radius: 12px; padding: 20px; max-width: 600px; margin: 0 auto; }
+    .step { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid #334155; }
+    .step:last-child { border-bottom: none; }
+    .dot { width: 12px; height: 12px; border-radius: 50%; background: #22c55e; }
+    .step-text { color: #94a3b8; font-size: 0.9rem; }
+    .footer { color: #475569; font-size: 0.85rem; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <h1>🚀 CI/CD Pipeline Live!</h1>
+  <p>Automated deployment powered by GitHub Actions</p>
+  <div class="badges">
+    <span class="badge">⚙️ GitHub Actions</span>
+    <span class="badge">🐳 Docker</span>
+    <span class="badge">☁️ AWS EC2</span>
+    <span class="badge">🔁 CI/CD</span>
+  </div>
+  <div class="pipeline">
+    <div class="step"><div class="dot"></div><div class="step-text">✅ Code pushed to GitHub</div></div>
+    <div class="step"><div class="dot"></div><div class="step-text">✅ GitHub Actions triggered</div></div>
+    <div class="step"><div class="dot"></div><div class="step-text">✅ Docker image built</div></div>
+    <div class="step"><div class="dot"></div><div class="step-text">✅ Image pushed to Docker Hub</div></div>
+    <div class="step"><div class="dot"></div><div class="step-text">✅ EC2 pulled latest image</div></div>
+    <div class="step"><div class="dot"></div><div class="step-text">✅ Container restarted automatically</div></div>
+  </div>
+  <div class="footer">Deployed on AWS EC2 | Containerized with Docker | Automated with GitHub Actions</div>
+</body>
+</html>
