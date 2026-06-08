@@ -36,3 +36,4 @@ jobs:
             docker stop cicd-webapp || true
             docker rm cicd-webapp || true
             docker run -d -p 80:80 --name cicd-webapp ${{ secrets.DOCKER_USERNAME }}/cicd-webapp:latest
+
